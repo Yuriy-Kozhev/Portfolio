@@ -1,0 +1,23 @@
+.sidepannel {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px;
+  height: 24px;
+  transform: rotate(-90deg);
+  top: 370px;
+  left: -130px;
+  z-index: 3;
+  &__divider {
+    height: 2px;
+    width: 70px;
+    background: #000;
+  }
+  &__text {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+  }
+}

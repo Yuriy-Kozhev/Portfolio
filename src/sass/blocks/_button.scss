@@ -1,0 +1,11 @@
+.btn {
+  padding: 12px 25px;
+  height: 45px;
+  width: 135px;
+  background: $main-color;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  &_clear {
+    background: rgba(100%, 100%, 0, 0);
+    text-align: center;
+  }
+}

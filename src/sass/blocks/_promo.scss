@@ -1,0 +1,32 @@
+.promo {
+  min-height: 100vh;
+  position: relative;
+  background: url("../img/XCnRsv51ego.jpg") no-repeat 0% 10% / cover;
+  padding-top: 206px;
+  &__title {
+    margin-top: 9px;
+    width: 532px;
+  }
+  &__subtitle {
+    position: relative;
+    padding-left: 10px;
+    z-index: 2;
+    @include before_circle;
+  }
+  &__btns {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+  }
+  &__link {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    &:hover {
+      color: #000;
+    }
+  }
+}
