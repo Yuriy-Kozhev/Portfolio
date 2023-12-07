@@ -10,6 +10,7 @@
   left: -130px;
   z-index: 3;
   &__divider {
+    margin-top: 3px;
     height: 2px;
     width: 70px;
     background: #000;
@@ -19,5 +20,10 @@
     font-size: 16px;
     font-weight: 700;
     line-height: normal;
+  }
+  &__link {
+    svg path {
+      transition: fill 0.5s linear;
+    }
   }
 }

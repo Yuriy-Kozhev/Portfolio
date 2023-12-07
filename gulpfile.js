@@ -69,10 +69,6 @@ gulp.task("images", function () {
     .pipe(browserSync.stream());
 });
 
-gulp.task("mailer", function () {
-  return gulp.src("src/mailer/**/*").pipe(gulp.dest("dist/mailer"));
-});
-
 gulp.task(
   "default",
   gulp.parallel(
@@ -81,7 +77,6 @@ gulp.task(
     "styles",
     "scripts",
     "fonts",
-    "mailer",
     "images",
     "html"
   )

@@ -1,0 +1,19 @@
+@media (any-hover: hover) {
+  .sidepannel {
+    #sidepannel-github,
+    #sidepannel-instagram,
+    #sidepannel-facebook {
+      &:hover svg path {
+        fill: $main-color;
+        transition: fill 0.1s linear;
+      }
+    }
+  }
+
+  .hamburger {
+    &:hover span {
+      background-color: white;
+      transition: background-color 0.1s linear;
+    }
+  }
+}
