@@ -1,7 +1,4 @@
 @import "libs/bootstrap-reboot.min.scss";
-
-/* @import "libs/slick.scss";
-@import "libs/animate.min.scss"; */
 @import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@500;700&display=swap");
 @import "base/variables";
 @import "base/mixins";
@@ -15,11 +12,19 @@
   margin: 0 auto;
 }
 
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: $main-color;
+  margin-top: 25px;
+}
+
 @import "blocks/promo.scss";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/sidepannel";
 @import "blocks/menu";
+@import "blocks/about";
 @import "media/media-menu";
 @import "media/media-promo";
 @import "media/media-button";
