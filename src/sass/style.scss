@@ -16,7 +16,7 @@
   width: 60px;
   height: 3px;
   background-color: $main-color;
-  margin-top: 25px;
+  margin: 25px auto 0 auto;
 }
 
 @import "blocks/promo.scss";
@@ -25,6 +25,7 @@
 @import "blocks/sidepannel";
 @import "blocks/menu";
 @import "blocks/about";
+@import "blocks/resume";
 @import "media/media-menu";
 @import "media/media-promo";
 @import "media/media-button";
