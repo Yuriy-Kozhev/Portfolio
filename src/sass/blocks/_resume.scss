@@ -6,7 +6,7 @@
     grid-template-columns: repeat(2, 1fr);
     column-gap: 136px;
   }
-  &__descr {
+  &__header {
     text-align: center;
   }
   &__title {
@@ -30,12 +30,21 @@
       margin: 0;
       li {
         position: relative;
-        &::after {
+        &::before {
           content: "";
           position: absolute;
           width: 1px;
-          height: 100%;
+          height: calc(100% + 5px);
           top: -5px;
+          left: -43px;
+          background-color: #000;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 43px;
+          height: 1px;
+          top: 63px;
           left: -43px;
           background-color: #000;
         }
@@ -68,6 +77,10 @@
     }
     &-body {
       margin-top: 12px;
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: normal;
     }
   }
 }

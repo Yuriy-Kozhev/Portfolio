@@ -5,6 +5,8 @@
 
 * {
   font-family: "Wix Madefor Display", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -26,6 +28,7 @@
 @import "blocks/menu";
 @import "blocks/about";
 @import "blocks/resume";
+@import "blocks/skills";
 @import "media/media-menu";
 @import "media/media-promo";
 @import "media/media-button";
