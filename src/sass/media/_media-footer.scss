@@ -1,0 +1,14 @@
+@media (any-hover: hover) {
+  .footer {
+    &__socials {
+      #footer-facebook,
+      #footer-telegram,
+      #footer-instagram {
+        &:hover svg path {
+          fill: $main-color;
+          transition: fill 0.1s linear;
+        }
+      }
+    }
+  }
+}

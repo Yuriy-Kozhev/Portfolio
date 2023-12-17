@@ -9,14 +9,6 @@
   &__header {
     text-align: center;
   }
-  &__title {
-    position: relative;
-    @include before_circle;
-    &::before {
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  }
   &__colomn {
     padding-left: 50px;
     &-title {

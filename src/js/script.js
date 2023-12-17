@@ -20,3 +20,10 @@ window.addEventListener("keydown", (e) => {
     menu.classList.remove("active");
   }
 });
+
+const levels = document.querySelectorAll(".skills__skill-level"),
+  progress = document.querySelectorAll(".skills__skill-progress span");
+
+levels.forEach((item, i) => {
+  progress[i].style.width = item.innerHTML;
+});

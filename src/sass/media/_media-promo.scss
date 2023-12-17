@@ -12,8 +12,8 @@
 
   .hamburger {
     &:hover span {
-      background-color: white;
-      transition: background-color 0.1s linear;
+      filter: drop-shadow(10px 10px 10px #ffa501);
+      transition: filter 0.1s linear;
     }
   }
 }
