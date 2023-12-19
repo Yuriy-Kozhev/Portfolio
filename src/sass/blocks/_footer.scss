@@ -1,14 +1,16 @@
 .footer {
   margin-top: 120px;
   &__wrapper {
-    padding: 0 50px;
+    padding: 0 35px 92px 52px;
     display: grid;
     grid-template-columns: 400px 585px;
-    justify-content: space-between;
+    column-gap: 68px;
   }
   &__photo {
+    background: url("../img/photo-footer.jpg") no-repeat center center / cover;
     img {
       width: 100%;
+      height: auto;
     }
   }
   &__descr {
@@ -33,6 +35,61 @@
       margin: 20px 20px 0 0;
       path {
         transition: fill 0.5s linear;
+      }
+    }
+  }
+  &__form {
+    margin-top: 30px;
+    display: grid;
+    grid-template-rows: 45px 190px 45px;
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 280px);
+    column-gap: 25px;
+    label {
+      position: absolute;
+      top: -7px;
+      left: 13px;
+      background-color: white;
+      padding: 0 8px;
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    input,
+    textarea {
+      resize: none;
+      width: 100%;
+      height: 100%;
+      padding: 14px 20px;
+      color: #000;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: normal;
+    }
+    &-input {
+      position: relative;
+    }
+    &-message {
+      position: relative;
+      grid-column: span 2;
+    }
+    &-triggers {
+      grid-column: span 2;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 26px;
+    }
+    &-policy {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 10px;
+      align-content: center;
+      span {
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: normal;
       }
     }
   }

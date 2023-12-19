@@ -1076,9 +1076,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__photo">
-            <img src="img/photo-footer.jpg" alt="photo" />
-          </div>
+          <div class="footer__photo"></div>
           <div class="footer__descr">
             <h2 class="title title_fz16 footer__title">Контакты</h2>
             <div class="title">Свяжитесь со мной</div>
@@ -1141,9 +1139,34 @@
             <div class="footer__contacts title title_fz14">
               Или оставьте ваши данные и я сам Вам напишу:
             </div>
-          </div>
 
-          <form action="#" class="footer__form"></form>
+            <form action="#" class="footer__form">
+              <div class="footer__form-input">
+                <input type="text" name="name" id="name" required />
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="footer__form-input">
+                <input type="email" name="email" id="email" required />
+                <label for="email">Ваша почта</label>
+              </div>
+              <div class="footer__form-message">
+                <textarea name="message" id="message"></textarea>
+                <label for="message">Ваше сообщение</label>
+              </div>
+              <div class="footer__form-triggers">
+                <button class="btn title title_fz14">
+                  Отправить сообщение
+                </button>
+                <div class="footer__form-policy">
+                  <input type="checkbox" required />
+                  <span>
+                    Согласие с
+                    <a href="/policy.html">политикой конфиденциальности</a>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
