@@ -1,0 +1,185 @@
+@media (max-width: 1300px) {
+  .sidepannel {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hamburger {
+    position: absolute;
+  }
+  .container {
+    max-width: 960px;
+  }
+  .divider {
+    margin: 15px auto 0 auto;
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      grid-template: repeat(2, 1fr) / repeat(2, 245px);
+      column-gap: 30px;
+    }
+    &__skill {
+      grid-template-columns: 40px 184px;
+    }
+    .title_fz14 {
+      font-size: 12px;
+    }
+  }
+  .resume {
+    padding-top: 70px;
+    &__wrapper {
+      padding: 60px 0 0 0;
+      column-gap: 60px;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .about {
+    padding-top: 60px;
+    &__wrapper {
+      grid-template-columns: 333px 356px;
+      column-gap: 30px;
+    }
+    &__skills {
+      grid-template: auto / 1fr;
+    }
+    &__skill {
+      grid-template-columns: 40px 295px;
+    }
+    &__subtitle {
+      font-size: 30px;
+    }
+    .title_fz14 {
+      font-size: 14px;
+    }
+  }
+  .resume {
+    &__wrapper {
+      column-gap: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .promo {
+    padding-top: 300px;
+    background: url(../img/XCnRsv51ego.jpg) no-repeat 60% 10% / cover;
+    &__title {
+      width: 400px;
+      margin-top: 14px;
+      line-height: normal;
+    }
+  }
+  .title {
+    &_fz48 {
+      font-size: 36px;
+    }
+  }
+  .about {
+    &__wrapper {
+      grid-template-columns: 250px 259px;
+      column-gap: 30px;
+    }
+    &__skill {
+      grid-template-columns: 40px 198px;
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+  .resume {
+    &__wrapper {
+      padding: 0;
+      grid-template-columns: repeat(auto-fill, 250px);
+      column-gap: 40px;
+    }
+    &__colomn {
+      padding: 40px 0 0 50px;
+      &-title {
+        width: 100%;
+      }
+    }
+    &__subtitle {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .menu {
+    &__block {
+      padding-left: 20px;
+    }
+    &__close {
+      left: 20px;
+    }
+  }
+  .promo {
+    padding-top: 400px;
+    background: url(../img/XCnRsv51ego.jpg) no-repeat 70% 10% / cover;
+    &__title {
+      width: 300px;
+    }
+  }
+  .hamburger {
+    left: 10px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .title {
+    &_fz48 {
+      padding: 0 5px 5px 5px;
+      font-size: 26px;
+      background-color: #ffe9bf78;
+    }
+  }
+  .about {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: 340px auto auto;
+      grid-auto-rows: minmax(243px, auto);
+    }
+    &__photo {
+      grid-row: 1/2;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 -80px;
+      }
+    }
+    &__skill {
+      grid-template-columns: 40px auto;
+      &-title {
+        width: auto;
+      }
+    }
+  }
+  .resume {
+    padding-top: 50px;
+    &__wrapper {
+      grid-template-columns: auto;
+    }
+    &__subtitle {
+      line-height: normal;
+    }
+  }
+}
