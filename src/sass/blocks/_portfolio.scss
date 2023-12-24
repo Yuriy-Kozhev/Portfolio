@@ -1,7 +1,7 @@
 .portfolio {
   margin-top: 120px;
   &__wrapper {
-    margin-top: 60px;
+    padding-top: 60px;
     display: grid;
     grid-template-rows: repeat(2, 281px);
     grid-auto-rows: 281px;
